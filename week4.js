@@ -108,3 +108,21 @@ console.log(result);
 
 // Write a function that takes an array of numbers and returns the average of all the elements in the array.
 
+function calculateAverage(numbers) {
+    let sum = 0; 
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    return sum / numbers.length; 
+}
+// example usage
+let numbers = [10, 20, 30, 40, 50];
+{ 
+    let sum = 0; 
+
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    let average = sum / numbers.length; 
+    console.log(average);
+}
